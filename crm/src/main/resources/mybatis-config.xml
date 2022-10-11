@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--    设置日志-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+
+<!--    <environments default="development">-->
+<!--        <environment id="development">-->
+<!--            <transactionManager type="JDBC"/>-->
+<!--            &lt;!&ndash;            配置数据源：创建Connection对象&ndash;&gt;-->
+<!--            <dataSource type="POOLED">-->
+<!--                &lt;!&ndash;                驱动内容&ndash;&gt;-->
+<!--                <property name="driver" value="com.mysql.jdbc.Driver"/>-->
+<!--                <property name="url" value="jdbc:mysql://localhost:3306/db_notice?useSSL=false&amp;serverTimezone=GMT"/>-->
+<!--                <property name="username" value="root"/>-->
+<!--                <property name="password" value="2020045024"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+    <!--    指定其他mapper文件的位置：
+找到其他mapper文件目的是找到其他文件的sql语句-->
+    <mappers>
+        <!--        使用mapper的resource属性指定mapper文件的路径
+这个路径是从target/classes路径开始的，使用斜杠分割
+一个mapper resource指定一个mapper文件-->
+    </mappers>
+    <!--    配置分页插件-->
+    <!--    <plugins>-->
+    <!--        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>-->
+    <!--    </plugins>-->
+</configuration>
